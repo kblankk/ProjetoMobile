@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell Background="Black"
+    x:Class="ProjetoMobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProjetoMobile"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ProjetoMobile">
+
+    
+    
+    
+    
+    <ShellContent
+       
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:Cursos}"
+        Route="Cursos" />
+
+    <ShellContent
+        
+        ContentTemplate="{DataTemplate local:Disciplinas}"
+        Route="Disciplinas" />
+
+    <ShellContent
+        
+        ContentTemplate="{DataTemplate local:Periodos}"
+        Route="Periodos"/>
+
+    <ShellContent Route="CursoIns" ContentTemplate="{DataTemplate local:CursoIns}" />
+
+    <ShellContent Route="DisciplinaIns" ContentTemplate="{DataTemplate local:DisciplinaIns}" />
+
+    <ShellContent Route="PeriodosIns" ContentTemplate="{DataTemplate local:PeriodosIns}" />
+
+
+
+
+
+
+
+
+</Shell>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoMobile.DisciplinaIns"
+             Background="Black">
+    
+
+        <VerticalStackLayout Padding="10" >
+
+            <Label x:Name="lblDiscAdd" Text="Adicionar Disciplinas" TextColor="White" FontSize="35" HorizontalTextAlignment="Center" />
+
+        </VerticalStackLayout>
+
+    
+</ContentPage>

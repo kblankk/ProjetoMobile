@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoMobile.MainPage" Background="Black">
+
+  
+
+        <VerticalStackLayout
+            Padding="30"
+            Margin="10" Background="Black">
+
+        <Label x:Name="lblInfoacad" Text="Sistema Acadêmico" TextColor="White" FontSize="40" HorizontalTextAlignment="Center"
+    VerticalOptions="Start"/>
+
+        <Grid RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+               
+
+            </Grid.ColumnDefinitions>
+
+           
+
+            <Button Text="Cursos" TextColor="black" Clicked="OnBotaoClicado" BackgroundColor="White" FontSize="30" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="Disciplinas" TextColor="black" Clicked="OnDisciplinas" BackgroundColor="White" FontSize="30" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="Periodos" TextColor="black" Clicked="OnPeriodos" BackgroundColor="White" FontSize="30" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+
+
+
+
+           
+
+
+        </Grid>
+      
+    
+          <Image Source="logo_unianchieta.png" WidthRequest="200" HeightRequest="150"/>
+
+
+
+
+
+    </VerticalStackLayout>
+    
+
+</ContentPage>

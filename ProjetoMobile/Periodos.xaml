@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoMobile.Periodos"
+             Background="Black">
+    <Grid Margin="30">
+    <VerticalStackLayout Padding="10">
+        
+        <Label x:Name="lblPeriodos" Text="Periodos" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" />
+    </VerticalStackLayout>
+
+    
+
+            <Button x:Name="btnPeriodosAdd" Text="+" WidthRequest="50" FontSize="20"
+                HorizontalOptions="End" VerticalOptions="End" Clicked="OnAdicionarPeriodo"/>
+    
+    
+
+
+    </Grid>
+
+
+
+</ContentPage>
