@@ -3,25 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoMobile.Disciplinas"
              Background="Black">
-    <Grid Margin="30">   
-        <VerticalStackLayout Padding="0">
-        
-        <Label x:Name="lblDisciplinas" Text="Disciplinas" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" />
+    <Grid Margin="30">
+        <VerticalStackLayout Padding="0" Spacing="20">
 
+            <Label x:Name="lblDisciplinas" Text="Disciplinas" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" />
+
+
+            <Frame CornerRadius="10" BorderColor="Gray" BackgroundColor="White" Padding="5">
+                <Grid VerticalOptions="Center">
+
+                    <Label Text="..." TextColor="Gray" FontSize="24" VerticalOptions="Center" />
+
+
+
+                    <HorizontalStackLayout HorizontalOptions="End">
+
+                        <ImageButton Source="delete_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="btnApagaDisciplina" />
+                        <ImageButton Source="edit_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="OnEditarDisciplina" />
+
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
+
+
+            <Frame  CornerRadius="10" BackgroundColor="White" Padding="5" >
+                <Grid VerticalOptions="Center">
+
+                    <Label Text="..." TextColor="Gray" FontSize="24" VerticalOptions="Center" />
+
+
+                    <HorizontalStackLayout HorizontalOptions="End">
+
+                        <ImageButton Source="delete_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="btnApagaDisciplina"/>
+                        <ImageButton Source="edit_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="OnEditarDisciplina" />
+
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
         </VerticalStackLayout>
 
-        
 
-            <Button x:Name="btnCursosAdd" Text="+" WidthRequest="50" FontSize="20"
-                HorizontalOptions="End" VerticalOptions="End" Clicked="OnAdicionarDiscplina"/>
-            
-        
-
-            
-            
-    
+        <Button x:Name="btnDisciplinasAdd" Text="+" WidthRequest="50" FontSize="20" HorizontalOptions="End" VerticalOptions="End" Clicked="OnAdicionarDiscplina" />
     </Grid>
-
-
 </ContentPage>
-    

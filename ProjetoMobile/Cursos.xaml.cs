@@ -18,6 +18,21 @@ public partial class Cursos : ContentPage
 
     }
 
+    private void btnApagarCurso(object sender, EventArgs e)
+    {
+      
+
+        DisplayAlert("Exclusão de Curso!", $" Você tem certeza que deseja excluir este curso? ", "Não", "Sim");
+
+
+    }
+
+    private async void OnEditarCurso(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///CursoEdit");
+
+    }
+
 
 
 

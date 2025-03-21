@@ -4,21 +4,56 @@
              x:Class="ProjetoMobile.Periodos"
              Background="Black">
     <Grid Margin="30">
-    <VerticalStackLayout Padding="10">
-        
-        <Label x:Name="lblPeriodos" Text="Periodos" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" />
-    </VerticalStackLayout>
+        <VerticalStackLayout Padding="0" Spacing="20">
 
-    
-
-            <Button x:Name="btnPeriodosAdd" Text="+" WidthRequest="50" FontSize="20"
-                HorizontalOptions="End" VerticalOptions="End" Clicked="OnAdicionarPeriodo"/>
-    
-    
+            <Label x:Name="lblPeriodos" Text="Periodos" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" />
 
 
+            <Frame CornerRadius="10" BorderColor="Gray" BackgroundColor="White" Padding="5">
+                <Grid VerticalOptions="Center">
+
+                    <Label Text="..." TextColor="Gray" FontSize="24" VerticalOptions="Center" />
+
+
+
+                    <HorizontalStackLayout HorizontalOptions="End">
+
+                        <ImageButton Source="delete_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="btnApagarPeriodo" />
+                        <ImageButton Source="edit_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="OnEditarPeriodo"  />
+
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
+
+
+            <Frame  CornerRadius="10" BackgroundColor="White" Padding="5" >
+                <Grid VerticalOptions="Center">
+
+                    <Label Text="..." TextColor="Gray" FontSize="24" VerticalOptions="Center" />
+
+
+                    <HorizontalStackLayout HorizontalOptions="End">
+
+                        <ImageButton Source="delete_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="btnApagarPeriodo"/>
+                        <ImageButton Source="edit_icon.png" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" HorizontalOptions="End" Clicked="OnEditarPeriodo"/>
+
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+
+
+        <Button x:Name="btnPeriodosAdd"
+                Text="+"
+                WidthRequest="50"
+                FontSize="20"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Clicked="OnAdicionarPeriodo" />
     </Grid>
-
-
-
 </ContentPage>
+
+    
+    

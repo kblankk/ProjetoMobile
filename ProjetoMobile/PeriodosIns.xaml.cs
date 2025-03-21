@@ -6,4 +6,10 @@ public partial class PeriodosIns : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void OnVoltarPeriodo(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///Periodos");
+
+    }
 }

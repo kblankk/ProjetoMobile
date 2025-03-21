@@ -6,4 +6,10 @@ public partial class DisciplinaIns : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void OninserirDisciplina(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///Disciplinas");
+
+    }
 }

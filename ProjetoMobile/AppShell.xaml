@@ -4,17 +4,33 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ProjetoMobile"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
     Title="ProjetoMobile">
 
-    
-    
-    
-    
-    <ShellContent
-       
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+
+
+            <Label Text="Menu"
+                   HorizontalOptions="Center" FontSize="40" TextColor="Blue"/>
+
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Menu"
+            FlyoutDisplayOptions="AsMultipleItems">
+
+
+
+
+
+    <ShellContent 
+        Title="Inicio" 
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    </FlyoutItem>
 
 
     <ShellContent
@@ -36,6 +52,12 @@
     <ShellContent Route="DisciplinaIns" ContentTemplate="{DataTemplate local:DisciplinaIns}" />
 
     <ShellContent Route="PeriodosIns" ContentTemplate="{DataTemplate local:PeriodosIns}" />
+
+    <ShellContent Route="CursoEdit" ContentTemplate="{DataTemplate local:CursoEdit}" />
+
+    <ShellContent Route="PeriodosEdit" ContentTemplate="{DataTemplate local:PeriodosEdit}" />
+
+    <ShellContent Route="DisciplinaEdit" ContentTemplate="{DataTemplate local:DisciplinaEdit}" />
 
 
 

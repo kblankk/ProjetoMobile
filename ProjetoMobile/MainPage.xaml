@@ -44,7 +44,7 @@
         </Grid>
       
     
-          <Image Source="logo_unianchieta.png" WidthRequest="200" HeightRequest="150"/>
+          <Image Source="logo_unianchieta.png" WidthRequest="300" HeightRequest="400" />
 
 
 
